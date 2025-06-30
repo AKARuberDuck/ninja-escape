@@ -1,5 +1,5 @@
 body {
-  background: url('https://cdn.jsdelivr.net/gh/yourusername/ninja-escape/assets/bg.jpg') no-repeat center center fixed;
+  background: url('https://cdn.jsdelivr.net/gh/AKARuberDuck/ninja-escape/assets/bg.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Courier New', monospace;
   margin: 0;
@@ -22,7 +22,7 @@ body {
   height: 40px;
   bottom: 10px;
   left: 280px;
-  background: url('https://cdn.jsdelivr.net/gh/yourusername/ninja-escape/assets/ninja.png') no-repeat center/cover;
+  background: url('https://cdn.jsdelivr.net/gh/AKARuberDuck/ninja-escape/assets/ninja.png') no-repeat center/cover;
 }
 
 .light {
