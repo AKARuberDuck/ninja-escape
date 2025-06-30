@@ -9,11 +9,11 @@ let caught = false;
 
 // Sound FX
 const footstep = new Howl({
-  src: ["https://cdn.jsdelivr.net/gh/yourusername/ninja-escape/assets/sfx/footstep.mp3"],
+  src: ["https://cdn.jsdelivr.net/gh/AKARuberDuck/ninja-escape/assets/sfx/footstep.mp3"],
   volume: 0.5,
 });
 const alert = new Howl({
-  src: ["https://cdn.jsdelivr.net/gh/yourusername/ninja-escape/assets/sfx/alert.mp3"],
+  src: ["https://cdn.jsdelivr.net/gh/AKARuberDuck/ninja-escape/assets/sfx/alert.mp3"],
   volume: 0.7,
 });
 
