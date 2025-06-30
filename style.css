@@ -1,8 +1,9 @@
 body {
-  background: url('https://cdn.jsdelivr.net/gh/AKARuberDuck/ninja-escape/assets/bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Courier New', monospace;
   margin: 0;
+  font-family: 'Courier New', monospace;
+  background: url('https://cdn.jsdelivr.net/gh/AKARuberDuck/ninja-escape/assets/bg-level1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
 }
 
 #game {
@@ -10,19 +11,23 @@ body {
   width: 600px;
   height: 400px;
   margin: 0 auto;
-  border: 3px solid #111;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #111;
   overflow: hidden;
-  box-shadow: 0 0 15px #000;
 }
 
 #ninja {
   position: absolute;
-  width: 40px;
-  height: 40px;
   bottom: 10px;
   left: 280px;
-  background: url('https://cdn.jsdelivr.net/gh/AKARuberDuck/ninja-escape/assets/ninja.png') no-repeat center/cover;
+  width: 64px;
+  height: 64px;
+  background: url('https://cdn.jsdelivr.net/gh/AKARuberDuck/ninja-escape/assets/ninja-sprite.png') left center;
+  animation: run 1s steps(8) infinite;
+}
+
+@keyframes run {
+  100% { background-position: -512px; }
 }
 
 .light {
@@ -30,27 +35,26 @@ body {
   top: 0;
   width: 100px;
   height: 400px;
-  background: rgba(255, 255, 150, 0.15);
+  background: rgba(255, 255, 120, 0.2);
   animation: sweep 5s infinite alternate ease-in-out;
-  pointer-events: none;
 }
 
-#light1 { left: 100px; }
+#light1 { left: 120px; }
 #light2 { left: 400px; animation-delay: 2.5s; }
+
+@keyframes sweep {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(60px); }
+}
 
 .cover {
   position: absolute;
   bottom: 0;
-  width: 40px;
-  height: 80px;
+  width: 50px;
+  height: 90px;
   background-color: #222;
 }
 
 #hud {
   font-size: 1.2rem;
-}
-
-@keyframes sweep {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(50px); }
 }
