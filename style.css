@@ -1,0 +1,56 @@
+body {
+  background: url('https://cdn.jsdelivr.net/gh/yourusername/ninja-escape/assets/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+}
+
+#game {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  border: 3px solid #111;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  box-shadow: 0 0 15px #000;
+}
+
+#ninja {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 10px;
+  left: 280px;
+  background: url('https://cdn.jsdelivr.net/gh/yourusername/ninja-escape/assets/ninja.png') no-repeat center/cover;
+}
+
+.light {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 400px;
+  background: rgba(255, 255, 150, 0.15);
+  animation: sweep 5s infinite alternate ease-in-out;
+  pointer-events: none;
+}
+
+#light1 { left: 100px; }
+#light2 { left: 400px; animation-delay: 2.5s; }
+
+.cover {
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 80px;
+  background-color: #222;
+}
+
+#hud {
+  font-size: 1.2rem;
+}
+
+@keyframes sweep {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50px); }
+}
